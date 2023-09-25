@@ -1,10 +1,10 @@
-# hotel-reservation-app
+# Deploying a Modified Multithreaded Spring Application to the Cloud
 #### Multithreaded Spring hotel reservation app setup to run with Docker for cloud deployment
 #### Built using Java, Spring, Angular, and Docker
 #### MVC Design Pattern Utilized
 
 ## Summary
-Full-Stack E-Commerce Application edited to:
+Full-Stack Hotel Reservation Application edited to:
 - Create and apply a multithreaded translation process for text on the homepage
 - Create and auto-apply currency translations based on the USD
 - Create and auto-apply timezone conversions based on Eastern Standard Time
