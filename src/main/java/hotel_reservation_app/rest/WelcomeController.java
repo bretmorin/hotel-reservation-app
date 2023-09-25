@@ -1,5 +1,6 @@
 package hotel_reservation_app.rest;
 
+import hotel_reservation_app.locale.DisplayMessage;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -37,7 +38,7 @@ public class WelcomeController {
 			System.out.println("fr_CA Message Received!");
 		});
 
-		return ResponseEntity.ok(l);
+		return ResponseEntity.ok(messageList);
 
 	}
 }
