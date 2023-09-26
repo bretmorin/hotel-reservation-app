@@ -55,7 +55,9 @@ export class AppComponent implements OnInit{
     )
 
     // Load times
-    this.getLiveTimes().subscribe(times => {this.liveTimes=times;})
+    this.getLiveTimes().subscribe(
+      times => {this.liveTimes=times;}
+      )
 
   }
 
