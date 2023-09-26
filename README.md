@@ -34,3 +34,10 @@ Full-Stack Hotel Reservation Application edited to:
 ## Starter Files
 To go through the process from scratch, included are project starter files that can be utilized to go 
 through the step-by-step process.
+
+## Deployment Instructions
+1. For deployment, choose AWS or Azure as the cloud provider.
+2. In doing so, the next step would be to setup a Container Registry in order to store the image.
+3. The image would need to be built with a relevant version tag and then pushed to the registry.
+4. Utilizing the image just created, create a Container Instance.
+5. Lastly, the container instance should be deployed. This would make it accessible and 'live'.
