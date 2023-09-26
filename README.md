@@ -30,3 +30,7 @@ Full-Stack Hotel Reservation Application edited to:
 - http://localhost:8080/api/
 
 ---
+
+## Starter Files
+To go through the process from scratch, included are project starter files that can be utilized to go 
+through the step-by-step process.
