@@ -29,6 +29,8 @@ export class AppComponent implements OnInit{
   currentCheckOutVal!:string;
   // Welcome Messages
   welcomeMessages!:string[];
+  // Presentation Message
+  liveTimes!:string[];
 
     ngOnInit(){
       this.roomsearch= new FormGroup({
@@ -51,6 +53,9 @@ export class AppComponent implements OnInit{
     this.getWelcomeMessages().subscribe(
       msgs => {this.welcomeMessages=msgs;}
     )
+
+    // Load times
+    this.getLiveTimes().subscribe(times => {this.liveTimes=times;})
 
   }
 
@@ -87,8 +92,6 @@ export class AppComponent implements OnInit{
   }*/
 
     getAll(): Observable<any> {
-
-
        return this.httpClient.get(this.baseURL + '/room/reservation/v1?checkin='+ this.currentCheckInVal + '&checkout='+this.currentCheckOutVal, {responseType: 'json'});
     }
 
@@ -96,6 +99,9 @@ export class AppComponent implements OnInit{
       return this.httpClient.get(this.baseURL + '/resources/welcome', {responseType: 'json'});
     }
 
+    getLiveTimes(): Observable<any> {
+      return this.httpClient.get(this.baseURL + '/time/live', {responseType: 'json'});
+    }
 
     protected readonly Math = Math;
   }

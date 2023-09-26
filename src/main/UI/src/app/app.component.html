@@ -28,6 +28,13 @@
   <div class="scene" id="welcome">
     <article class="content">
       <div class="row">
+        <div class="col-12" *ngIf="liveTimes && liveTimes.length >= 3">
+          <h3>Join us for a live presentation held at the Landon Hotel on Oct 11, 2024 at:</h3>
+          <h1> US/Eastern: {{liveTimes[0]}}</h1>
+          <h1> US/Mountain: {{liveTimes[1]}}</h1>
+          <h1> Universal Time: {{liveTimes[2]}}</h1>
+          <br><br>
+        </div>
         <div class=""col-12>
           <div class="gallery">
             <img src="assets/images/intro_room.jpg" alt="Intro Gallery Room Sample Pictures">
