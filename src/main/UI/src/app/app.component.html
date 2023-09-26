@@ -27,9 +27,6 @@
 <main id="wrapper">
   <div class="scene" id="welcome">
     <article class="content">
-
- 
-
       <div class="row">
         <div class=""col-12>
           <div class="gallery">
@@ -80,7 +77,9 @@
                 </td>
                 <td>
                   <strong>Room #: {{room.roomNumber}}</strong><br/>
-                  <strong>Price: ${{room.price}}</strong>
+                  <strong>Price: ${{room.price}}</strong><br/>
+                  <strong>Price: ${{Math.round(+room.price*1.30)}} CAD</strong><br/>
+                  <strong>Price: €{{Math.round(+room.price*0.87)}}</strong>
                 </td>
                 <td>
                   <button type="submit" class="btn btn-primary" (click)="reserveRoom(room.id)">Reserve</button>
